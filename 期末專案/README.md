@@ -16,7 +16,7 @@
 ## 資料集
 
 - 來源：[Kaggle - AMDNet23: Fundus Image Dataset for Age-Related Macular Degeneration Disease](https://www.kaggle.com/datasets/orvile/macular-degeneration-disease-dataset)
-- 影像資料集與模型權重（`.pth`）因檔案過大未上傳，請自行從上方連結下載，並放在 `archive/AMDNet23 Dataset/` 底下
+- 影像位於 `archive/AMDNet23 Dataset/{train,valid}/{amd,cataract,diabetes,normal}/`
 - 使用資料集原本提供的 train／valid 切分，沒有另外建立測試集
 
 | 切分 | amd | cataract | diabetes | normal | 合計 |
@@ -112,8 +112,9 @@ Imbalance ratio（max/min）= 400 / 394 ≈ 1.02 < 1.5，屬於**相對平衡**�
 | 檔案 | 說明 |
 |---|---|
 | `HW(初版).ipynb` | 主程式：資料載入、EDA、前處理、ResNet18 訓練與評估 |
+| `archive/AMDNet23 Dataset/` | 眼底影像資料集（train／valid） |
 | `archive/dataset.csv` | 各類別影像數量統計 |
-| `outputs_exp1_12/ExpN/` | 各組實驗的訓練曲線、混淆矩陣、每類別指標（`*_per_class_metrics.csv`）與訓練歷程（`history_ExpN.csv`） |
+| `outputs_exp1_12/ExpN/` | 各組實驗的最佳模型權重（`ExpN_best_model.pth`）、訓練曲線、混淆矩陣、每類別指標（`*_per_class_metrics.csv`）與訓練歷程（`history_ExpN.csv`） |
 | `outputs_exp1_12/results_exp1_12_summary.csv` | 12 組實驗結果彙整 |
 | `結論/` | 報告使用的 EDA 與最佳實驗圖表 |
 | `深度學習期末專案.docx` | 完整報告 |
