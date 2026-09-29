@@ -1,0 +1,17 @@
+# 只上傳三個專案資料夾與根目錄 README，其他（課輔、HW3、token 等）一律忽略
+/*
+!/.gitignore
+!/README.md
+!/期初專案/
+!/期中專案/
+!/期末專案/
+
+# 期末專案的大型檔案：眼底影像資料集（約 1.16GB）與模型權重（約 540MB）
+/期末專案/archive/AMDNet23 Dataset/
+*.pth
+
+# 系統與暫存檔
+.ipynb_checkpoints/
+desktop.ini
+Thumbs.db
+~$*

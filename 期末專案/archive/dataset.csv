@@ -1,0 +1,10 @@
+set,class,count
+train,amd,394
+train,cataract,400
+train,diabetes,400
+train,normal,400
+valid,amd,100
+valid,cataract,100
+valid,diabetes,100
+valid,normal,100
+
